@@ -1,6 +1,6 @@
 /*#F25E7A
 #A60A33*/
-
+/* responsivo not
 body {
     background-color: #a60a33;
     padding: 5px;
@@ -137,11 +137,7 @@ p {
     width: 300px;
     height: 300px;
     margin-top: 23px;
-}
-
-
-
-
+}*/
 
 
 /*body {
@@ -191,5 +187,176 @@ p {
     }
     100%{
         transform: translateY(-10vh) scale(1);
+    }
+}
+
+/* Estilo principal */
+body {
+    background-color: #a60a33;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 auto;
+    color: white;
+    font: normal 24pt monospace;
+    text-align: center;
+    border-right: 4px solid;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 27ch;
+    overflow: hidden;
+    animation: animaMarcador 0.5s linear infinite, animaTexto steps(27) 3s;
+}
+
+@keyframes animaMarcador {
+    50% {
+        border-right: transparent;
+    }
+}
+
+@keyframes animaTexto {
+    0% {
+        width: 0;
+    }
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    border: white 2px solid;
+}
+
+#fotos {
+    background-color: #F25E7A;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    border: white 2px solid;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#lembrete {
+    font: normal 20pt monospace;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+#txt {
+    background-color: #F25E7A;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: white 2px solid;
+    color: white;
+    text-align: left;
+}
+
+p {
+    font: normal 14pt monospace;
+    padding: 15px;
+    text-align: justify;
+    margin-top: 20px;
+    color: white;
+}
+
+#bonus {
+    color: white;
+    font: normal 24pt monospace;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#divbonus {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#imgb {
+    background-color: #F25E7A;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: white solid 2px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#txtb {
+    width: 90%;
+    max-width: 300px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#pb {
+    text-align: left;
+    font-size: 16pt;
+}
+
+#spoilerimg {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Media Query para dispositivos menores que 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18pt;
+        width: 100%;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #fotos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #txt, #imgb {
+        width: 90%;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    #bonus {
+        font-size: 20pt;
     }
 }
