@@ -193,22 +193,22 @@ p {
 /* Estilo principal */
 body {
     background-color: #a60a33;
-    padding: 5px;
-    margin: 10px;
+    padding: 10px;
+    margin: 15px;
     text-align: center;
 }
 
 h1 {
     margin: 0 auto;
     color: white;
-    font: normal 24pt monospace;
+    font: normal 28pt monospace;
     text-align: center;
     border-right: 4px solid;
     white-space: nowrap;
     width: 100%;
-    max-width: 27ch;
+    max-width: 30ch;
     overflow: hidden;
-    animation: animaMarcador 0.5s linear infinite, animaTexto steps(27) 3s;
+    animation: animaMarcador 0.5s linear infinite, animaTexto steps(30) 3s;
 }
 
 @keyframes animaMarcador {
@@ -234,13 +234,13 @@ img {
 #fotos {
     background-color: #F25E7A;
     width: 90%;
-    max-width: 800px;
+    max-width: 850px;
     height: auto;
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 20px;
     border: white 2px solid;
 }
@@ -249,26 +249,26 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #lembrete {
-    font: normal 20pt monospace;
-    margin-top: 100px;
-    margin-bottom: 5px;
+    font: normal 22pt monospace;
+    margin-top: 90px;
+    margin-bottom: 10px;
 }
 
 #txt {
     background-color: #F25E7A;
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
     height: auto;
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     border: white 2px solid;
     color: white;
     text-align: left;
@@ -276,7 +276,7 @@ section {
 
 p {
     font: normal 14pt monospace;
-    padding: 15px;
+    padding: 20px;
     text-align: justify;
     margin-top: 20px;
     color: white;
@@ -291,8 +291,8 @@ p {
 }
 
 #divbonus {
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 #imgb {
@@ -300,7 +300,7 @@ p {
     width: 90%;
     max-width: 400px;
     height: auto;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50px;
     border: white solid 2px;
 }
@@ -308,15 +308,15 @@ p {
 #container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 #txtb {
     width: 90%;
-    max-width: 300px;
+    max-width: 320px;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #pb {
@@ -328,19 +328,19 @@ p {
     width: 90%;
     max-width: 300px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-/* Media Query para dispositivos menores que 768px */
-@media (max-width: 768px) {
+/* Media Query para dispositivos menores que 720px */
+@media (max-width: 720px) {
     h1 {
-        font-size: 18pt;
+        font-size: 24pt;
         width: 100%;
     }
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     #fotos {
@@ -349,7 +349,7 @@ p {
     }
 
     #txt, #imgb {
-        width: 90%;
+        width: 95%;
     }
 
     p {
@@ -357,6 +357,11 @@ p {
     }
 
     #bonus {
+        font-size: 22pt;
+    }
+
+    #lembrete {
         font-size: 20pt;
     }
 }
+
